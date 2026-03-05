@@ -12,7 +12,7 @@
     <div>
       <button type="button" id="add-button" onclick="addButton()">Add Task</button>
       <button type="button" id="update-button"onclick="updateButton()">Update Task</button>
-      <button type="button" id="delete-button"onclick="deleteData()">Delete Task</button>
+      <button type="button" id="delete-button"onclick="removeButton()">Remove Task</button>
       <!-- <button type="button" onclick="addButton()">View To-Do-List</button> -->
     </div>
 
@@ -20,13 +20,19 @@
 
     <div id="input">
       <input type="text" id="add-task" placeholder="Add task here"> 
-      <button type="button" id="ok" onclick="storeData()">OK</button>
+      <button type="button" id="ok-btn" onclick="addTask()">OK</button>
     </div>
 		<br>
 
 		<div id="input">
       <input type="text" id="update-task" placeholder="Enter the No which you want to update"> 
-      <button type="button" id="update" onclick="updateData()">Update</button>
+      <button type="button" id="update-btn" onclick="updateTask()">Update</button>
+    </div>
+		<br>
+
+    <div id="input">
+      <input type="text" id="remove-task" placeholder="Enter the No which you want to remove"> 
+      <button type="button" id="remove-btn" onclick="removeTask()">Remove</button>
     </div>
 		<br>
 

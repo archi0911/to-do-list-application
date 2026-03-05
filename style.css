@@ -38,6 +38,18 @@ form div:first-of-type{
 	gap:15px;
 }
 
+/* Input section */
+/* form div:nth-of-type(2){
+	display:flex;
+	margin-top:20px;
+	gap:10px;
+} */
+#input {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+}
+
 /* Common button style */
 button{
 	padding:10px 18px;
@@ -78,18 +90,6 @@ button{
 	background:#c0392b;
 }
 
-/* Input section */
-/* form div:nth-of-type(2){
-	display:flex;
-	margin-top:20px;
-	gap:10px;
-} */
-#input {
-	display: flex;
-	gap: 10px;
-	margin-top: 20px;
-}
-
 /* ADD BUTTON Input field */
 #add-task{
 	flex:1;
@@ -105,21 +105,16 @@ button{
   border-color:#3498db;
 }
 
-
-/* OK button */
-#ok{
+/* OK button for Add */
+#ok-btn{
 	background: #bdd7f8;
 	color:black;
 	padding:12px 20px;
 	display: none;
 }
 
-#ok:hover{
+#ok-btn:hover{
   background:#2c3e50;
-}
-body{
-	font-family: Arial, sans-serif;
-	background-color: #f4f6fb;
 }
 
 /* UPDATE BUTTON Input field */
@@ -137,18 +132,51 @@ body{
   border-color:#3498db;
 }
 
-
-/* OK button */
-#ok{
+/* Update button */
+#update-btn{
 	background: #bdd7f8;
 	color:black;
 	padding:12px 20px;
 	display: none;
 }
 
-#ok:hover{
+#update-btn:hover{
   background:#2c3e50;
 }
+
+/* REMOVE BUTTON Input field */
+#remove-task{
+	flex:1;
+	padding:12px;
+	border:1px solid #ccc;
+	border-radius:8px;
+	font-size:14px;
+	display: none;
+}
+
+#remove-task:focus{
+  outline:none;
+  border-color:#3498db;
+}
+
+/* Remove button */
+#remove-btn{
+	background: #bdd7f8;
+	color:black;
+	padding:12px 20px;
+	display: none;
+}
+
+#remove-btn:hover{
+  background:#2c3e50;
+}
+
+body{
+	font-family: Arial, sans-serif;
+	background-color: #f4f6fb;
+}
+
+
 body{
 	font-family: Arial, sans-serif;
 	background-color: #f4f6fb;
