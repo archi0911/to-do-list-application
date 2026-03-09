@@ -38,18 +38,6 @@ form div:first-of-type{
 	gap:15px;
 }
 
-/* Input section */
-/* form div:nth-of-type(2){
-	display:flex;
-	margin-top:20px;
-	gap:10px;
-} */
-#input {
-	display: flex;
-	gap: 10px;
-	margin-top: 20px;
-}
-
 /* Common button style */
 button{
 	padding:10px 18px;
@@ -60,38 +48,25 @@ button{
 	transition:0.3s;
 }
 
-/* Add button */
-#add-button{
-	background:#3498db;
-	color:white;
+#add-btn, #view-btn{
+  color:white;
 }
 
-#add-button:hover{
-	background:#2980b9;
+#add-btn{ background:#3498db; }
+#add-btn:hover{ background:#2980b9; }
+
+#view-btn{ background:#2ecc71; }
+#view-btn:hover{ background:#27ae60; }
+
+/* Input Field Division */
+#task {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
 }
 
-/* Update button */
-#update-button{
-	background:#2ecc71;
-	color:white;
-}
-
-#update-button:hover{
-  background:#27ae60;
-}
-
-/* Delete button */
-#delete-button{
-	background:#e74c3c;
-	color:white;
-}
-
-#delete-button:hover{
-	background:#c0392b;
-}
-
-/* ADD BUTTON Input field */
-#add-task{
+/* Input field */
+#task-textbox{
 	flex:1;
 	padding:12px;
 	border:1px solid #ccc;
@@ -100,12 +75,12 @@ button{
 	display: none;
 }
 
-#add-task:focus{
+#task-textbox:focus{
   outline:none;
   border-color:#3498db;
 }
 
-/* OK button for Add */
+/* OK button for Input Field */
 #ok-btn{
 	background: #bdd7f8;
 	color:black;
@@ -116,66 +91,6 @@ button{
 #ok-btn:hover{
   background:#2c3e50;
 }
-
-/* UPDATE BUTTON Input field */
-#update-task{
-	flex:1;
-	padding:12px;
-	border:1px solid #ccc;
-	border-radius:8px;
-	font-size:14px;
-	display: none;
-}
-
-#update-task:focus{
-  outline:none;
-  border-color:#3498db;
-}
-
-/* Update button */
-#update-btn{
-	background: #bdd7f8;
-	color:black;
-	padding:12px 20px;
-	display: none;
-}
-
-#update-btn:hover{
-  background:#2c3e50;
-}
-
-/* REMOVE BUTTON Input field */
-#remove-task{
-	flex:1;
-	padding:12px;
-	border:1px solid #ccc;
-	border-radius:8px;
-	font-size:14px;
-	display: none;
-}
-
-#remove-task:focus{
-  outline:none;
-  border-color:#3498db;
-}
-
-/* Remove button */
-#remove-btn{
-	background: #bdd7f8;
-	color:black;
-	padding:12px 20px;
-	display: none;
-}
-
-#remove-btn:hover{
-  background:#2c3e50;
-}
-
-body{
-	font-family: Arial, sans-serif;
-	background-color: #f4f6fb;
-}
-
 
 body{
 	font-family: Arial, sans-serif;
@@ -189,20 +104,19 @@ body{
 	overflow: hidden;
 }
 
-.list-item {
-	display: flex;
-	align-items: center;
-	padding: 10px 12px;
-	border-bottom: 1px solid #d6e0ff;
+.list-item{
+	display:flex;
+	align-items:center;
+	gap:10px;
+	padding:10px 12px;
+	border-bottom:1px solid #d6e0ff;
 }
 
-/* Light blue rows */
-.list-item:nth-child(odd){
+.list-item:nth-of-type(odd){
     background-color: #dfe9ff;
 }
 
-/* Darker blue rows */
-.list-item:nth-child(even){
+.list-item:nth-of-type(even){
 	background-color: #b9ccff;
 }
 
@@ -218,8 +132,8 @@ body{
 }
 
 .list-item input {
-    margin-left: auto;
-    transform: scale(1.2);
+	margin-right:10px;
+	transform: scale(1.2);
 }
 
 h1{

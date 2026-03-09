@@ -5,39 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To-Do-List</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
   <form>
     <h1>To-Do-List</h1>
     <div>
-      <button type="button" id="add-button" onclick="addButton()">Add Task</button>
-      <button type="button" id="update-button"onclick="updateButton()">Update Task</button>
-      <button type="button" id="delete-button"onclick="removeButton()">Remove Task</button>
-      <!-- <button type="button" onclick="addButton()">View To-Do-List</button> -->
+      <button type="button" id="add-btn" onclick="addButton()">Add Task</button>
+      <button type="button" id="view-btn" onclick="viewList()">View List</button>
     </div>
-
     <br>
 
-    <div id="input">
-      <input type="text" id="add-task" placeholder="Add task here"> 
+    <div id="task">
+      <input type="text" id="task-textbox" placeholder="Enter Task here">
       <button type="button" id="ok-btn" onclick="addTask()">OK</button>
     </div>
-		<br>
 
-		<div id="input">
-      <input type="text" id="update-task" placeholder="Enter the No which you want to update"> 
-      <button type="button" id="update-btn" onclick="updateTask()">Update</button>
-    </div>
 		<br>
-
-    <div id="input">
-      <input type="text" id="remove-task" placeholder="Enter the No which you want to remove"> 
-      <button type="button" id="remove-btn" onclick="removeTask()">Remove</button>
-    </div>
-		<br>
-
     <div id="list">
-	    <h1>List</h1>
 		</div>
 
   </form>
